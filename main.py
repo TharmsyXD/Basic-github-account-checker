@@ -8,5 +8,6 @@ def check_github(username):
     else:
         print(f"{username} is not a valid GitHub username.")
 
+if __name__ == "__main__":
     username = input("Enter a GitHub username to check: ")
     check_github(username)
