@@ -2,7 +2,7 @@ import requests
 
 def check_github(username):
     url = f"https://api.github.com/users/{username}"
- response = requests.get(url)
+    response = requests.get(url)
     if response.status_code == 200:
         print(f"{username} is a valid GitHub username!")
     else:
